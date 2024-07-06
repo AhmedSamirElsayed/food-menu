@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --mainColor: #000000
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    /* font-family: "Sacramento", cursive; */
+}
+
+main {
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fram {
+    margin: 0px 100px 0 138px;
+}
+
+
+.primary-text {
+    color: rgba(222, 199, 0, 1);
+    font-family: Sacramento;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.35px;
+    text-align: left;
+}
+
+p {
+    color: #ffffff6b;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.navbar {
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #423b3b;
+    z-index: 1;
+}
+
+.left-n {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 30px; */
+}
+
+.left-n .bars-icon {
+    width: 138px;
+    background-color: #1A1A1A;
+    border: 2px solid;
+    padding: 35px;
+    padding-left: 41px;
+}
+
+.left-n .bars-icon i {
+    font-size: 40px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.left-n .logo {
+    width: 83px;
+    height: 73px;
+    margin-top: 21px;
+}
+
+.right-n {
+    width: 32%;
+    margin-right: 73px;
+}
+
+.right-n ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-n ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* home page */
+.side-bar {
+    border: 2px solid;
+    width: 138px;
+    /* height: calc(100vh - 112px); */
+    background-color: #0C0C0C;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 160px);
+}
+
+.top {
+    width: 100%;
+    height: 80%;
+}
+
+.bottom {
+    display: flex;
+    width: 101%;
+    height: 80%;
+    /* background-color: #fff; */
+}
+
+.bottom .details {
+    display: flex;
+}
+
+
+
+
+#home-page {
+    display: flex;
+    width: 100%;
+    /* height: calc(900px - 113px); */
+    /* height: calc(100vh - 113px); */
+    position: relative;
+}
+
+#home-page .main-content {
+    display: flex;
+    width: calc(100vw - 150px);
+    background-color: #161515;
+}
+
+#home-page .main-content .leftside {
+    float: left;
+    padding-top: 90px;
+    padding-left: 28px;
+}
+
+#home-page .main-content .leftside p {
+    width: 256px;
+}
+
+#home-page .main-content .rightside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page .main-content .rightside .img-left img {
+    margin-top: 5px;
+    height: 500px;
+    width: 370px;
+}
+
+#home-page .main-content .rightside .text-right {
+    margin-left: -24px;
+}
+
+#home-page .main-content .rightside .text-right p {
+    width: 40%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+
+#home-page .main-content .rightside .text-right h1,
+#home-page .main-content .leftside h2,
+#home-page .main-content .leftside h3 {
+    color: aliceblue;
+}
+
+#home-page .social-links {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    background-color: rgba(222, 199, 0, 1);
+    /* width: 90px; */
+    height: 175px;
+    border-radius: 28px 0 0 28px;
+}
+
+#home-page .social-links a {
+    margin-left: 18px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+}
+
+/*Favorite Fruits start */
+del {
+    opacity: 0.5;
+}
+
+hr {
+    width: 100%;
+    margin: 30px 0;
+
+    border: 1px solid #7f5d5b;
+}
+
+#Favorite_Fruits .contener {
+    width: 100%;
+    /* background-color: var(--mainColor); */
+    padding-bottom: 20px;
+}
+
+#Favorite_Fruits .head,
+#fruit-shoop .head {
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 50px; */
+    padding-top: 50px;
+    /* margin: 0 50px;*/
+}
+
+#Favorite_Fruits .head .more,
+#fruit-shoop .head .more {
+    cursor: pointer;
+}
+
+#Favorite_Fruits .card-contener {
+    margin-right: -18px;
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* margin: auto; */
+    margin-top: 50px;
+}
+
+#Favorite_Fruits .card,
+#fruit-shoop .card {
+    color: #fff;
+    background-color: #1f1919;
+    /* width: 280px; */
+    border: 1px solid;
+    /* border-radius: 8px; */
+    overflow: hidden;
+}
+
+#Favorite_Fruits .card {
+    margin-right: 20px;
+}
+
+#Favorite_Fruits .card img,
+#fruit-shoop .card img {
+    width: 100%;
+    height: auto;
+}
+
+#Favorite_Fruits .card_content,
+#fruit-shoop .card_content {
+    padding: 20px;
+}
+
+#Favorite_Fruits .card_content h3,
+#fruit-shoop .card-contener h3 {
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+#Favorite_Fruits .card_content p,
+#fruit-shoop .card_content p {
+    padding: 10px 0;
+}
+
+
+/*  */
+#Favorite_Fruits .card p span,
+#fruit-shoop .card p span {
+    margin-right: 35px;
+}
+
+#Favorite_Fruits .btns,
+#fruit-shoop .btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#Favorite_Fruits .btn1,
+#fruit-shoop .btn1 {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    margin-left: -20px;
+}
+
+#Favorite_Fruits .btn1 span,
+#fruit-shoop .btn1 span {
+    margin-right: 10px;
+    /* cursor: pointer; */
+}
+
+#Favorite_Fruits .btn2,
+#fruit-shoop .btn2 {
+    border: none;
+    background-color: rgb(198, 198, 8);
+    color: #fff;
+    border-radius: 1px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Favorite Fruits end */
+/* form start */
+.Data-form {
+    background-color: #555555;
+    padding-bottom: 70px;
+}
+
+.Data-form h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container-form {
+    background-color: #fff;
+    padding: 40px 0 80px 93px;
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 23px;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid salmon;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid rgb(13, 133, 202);
+}
+
+.container-form #fruit-img {
+    background-color: sandybrown;
+}
+
+.container-form button {
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background-color: rgb(13, 133, 202);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* form end */
+
+/* fruit-shoop start */
+#fruit-shoop {
+    display: none;
+}
+
+.grid-cards {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 70px;
+}
+
+#fruit-shoop .btn1 span i {
+    cursor: context-menu;
+}
+
+/* fruit-shoop end */
+
+/* about section start */
+.about {
+    /* background-color: rgb(0 0 0 / 72%); */
+    background-color: #3a2f2f;
+}
+
+.about .contener {
+    margin: 0 105px 0 138px;
+    padding-bottom: 20px;
+}
+
+.about .head {
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.about .arrow {
+    cursor: pointer;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about hr {
+    width: 100%;
+    margin: 30px 0;
+    /* margin-left: 80px; */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+#card_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.about .card {
+    background-color: rgb(0 0 0 / 26%);
+    color: #fff;
+    display: flex;
+    padding: 20px 30px;
+    width: calc(95% /3);
+}
+
+
+.left {
+    width: 66%;
+}
+
+.PublicText {
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.right {
+    margin: auto;
+}
+
+.imgUser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.UserName {
+    display: block;
+}
+
+/* about section end */
+
+/* footer start */
+#footer {
+    background-color: var(--mainColor);
+}
+
+#footer .line1 {
+    display: flex;
+}
+
+#footer .line2 {
+    display: flex;
+}
+
+#footer .subscribe {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+    padding: 30px;
+}
+
+#footer .subscribe p {
+    margin-left: 41px;
+    width: 265px;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+#footer .subscribe input {
+    background-color: black;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    width: 383px;
+    outline: none;
+    border: 1px solid #fff;
+    border-right: 0;
+}
+
+#footer .subscribe button {
+    margin-left: -5px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+#footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start;
+    width: 25%;
+    padding: 50px 50px 50px 30px;
+    background-color: #3a2f2f82;
+}
+
+#footer .social p {
+    color: white;
+    width: 150px;
+
+}
+
+#footer .social .social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+#footer .social .social-links a {
+    /* border: 1px solid white; */
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    margin: auto;
+}
+
+#footer .social .social-links a:first-child {
+    border: 1px solid white;
+}
+
+
+
+
+#footer .nav2_buttom {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    padding: 20px 32px 20px;
+
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    gap: 96px;
+}
+
+#footer .logo {
+    margin-left: 40px;
+}
+
+#footer .copyRight p {
+    font-size: 12px;
+    color: white;
+    padding: 35px 0 0 0;
+    padding-left: 19px;
+}
+
+#footer .copyRight {
+    width: 25%;
+    background-color: var(--mainColor);
+}
+
+
+/* footer end */
